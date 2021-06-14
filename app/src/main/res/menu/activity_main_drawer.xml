@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <item android:title="Procesos">
+        <menu>
+            <item
+                android:id="@+id/nav_notaventa"
+                android:icon="@drawable/menu_nota"
+                android:title="Notas de venta" />
+            <item
+                android:id="@+id/nav_notas_exenta"
+                android:icon="@drawable/menu_nota"
+                android:title="Nota de venta exenta" />
+        </menu>
+    </item>
+    <item android:title="Mantención local">
+        <menu>
+            <item
+                android:id="@+id/nav_sucursales"
+                android:icon="@drawable/menu_sucursales"
+                android:title="Sucursales Clientes" />
+        </menu>
+    </item>
+    <item android:title="OTROS">
+        <menu>
+            <item
+                android:id="@+id/SALIR"
+                android:icon="@drawable/salir_50dp"
+                android:title="Cerrar Sesion" />
+        </menu>
+    </item>
+</menu>
