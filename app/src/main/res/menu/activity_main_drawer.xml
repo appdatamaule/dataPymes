@@ -18,7 +18,7 @@
         <menu>
             <item
                 android:id="@+id/nav_sucursales"
-                android:icon="@drawable/menu_sucursales"
+                android:icon="@drawable/menu_nota"
                 android:title="Sucursales Clientes" />
         </menu>
     </item>
@@ -26,7 +26,7 @@
         <menu>
             <item
                 android:id="@+id/SALIR"
-                android:icon="@drawable/salir_50dp"
+                android:icon="@drawable/menu_nota"
                 android:title="Cerrar Sesion" />
         </menu>
     </item>

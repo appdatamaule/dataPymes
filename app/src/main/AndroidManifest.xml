@@ -22,30 +22,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".popups.popupagregarsucursal"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".popups.popupdetalleventa"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".popups.nuevocliente"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".popups.actualizarcliente"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".popups.popupmostrarprecios"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".fragmentsmenu.fragmentsnotaspendientes.popupdetallenotaventapendiente"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".popups.popupeditarsucursal"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".popups.popupagregarsucursal2"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
             android:screenOrientation="portrait"
@@ -55,20 +31,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LOGIN"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
-        <activity
-            android:name=".popups.pdfvisualizacion"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".popups.dialogcontac1"
-            android:theme="@style/AppTheme.tematransparente" />
-        <activity
-            android:name=".popups.dialogcorre1"
-            android:theme="@style/AppTheme.tematransparente" />
-
 
         <uses-library
             android:name="org.apache.http.legacy"

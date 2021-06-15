@@ -1,9 +1,6 @@
 package com.example.myapplication;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.design.widget.NavigationView;
@@ -16,7 +13,6 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
-import com.example.myapplication.fragmentsmenu.sucursales.sucursalesFragment;
 
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -36,7 +32,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         View ventanaheader =navigationView.getHeaderView(0);
         text = (TextView)ventanaheader.findViewById(R.id.setname);
         text2=(TextView)ventanaheader.findViewById(R.id.nombrerol);
-
+        FragmentManager fragmentManager= getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.contenedor,new productos_fragment()).commit();
 
     }
     @Override
@@ -66,11 +63,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         int id = item.getItemId();
         FragmentManager fragmentManager= getSupportFragmentManager();
         if (id == R.id.nav_notaventa) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new sucursalesFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.contenedor,new productos_fragment()).commit();
         }  else if (id == R.id.nav_sucursales) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new sucursalesFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.contenedor,new productos_fragment()).commit();
         } else if (id == R.id.nav_notas_exenta) {
-            fragmentManager.beginTransaction().replace(R.id.contenedor,new sucursalesFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.contenedor,new productos_fragment()).commit();
         }else if (id == R.id.SALIR) {
             Intent intent = new Intent(getApplicationContext(), MainActivity.class);
             startActivity(intent);
