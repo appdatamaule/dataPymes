@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.mikhaellopez:circularimageview:4.2.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/6d9252f5fdc3b8508b6ea4237ac5d41f/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/6d9252f5fdc3b8508b6ea4237ac5d41f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/6d9252f5fdc3b8508b6ea4237ac5d41f/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/0fc7c8f9ec77a8f5269438c385a54bb5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/0fc7c8f9ec77a8f5269438c385a54bb5/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/0fc7c8f9ec77a8f5269438c385a54bb5/res" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/5043154b3aab6d6dd677fa4daa2bf64f/AndroidManifest.xml" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/5043154b3aab6d6dd677fa4daa2bf64f/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/circularimageview-4.2.0.aar/5043154b3aab6d6dd677fa4daa2bf64f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.mikhaellopez/circularimageview/4.2.0/8b2df7169604b3f5e9b48717f2dbbcdb3c8753d9/circularimageview-4.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

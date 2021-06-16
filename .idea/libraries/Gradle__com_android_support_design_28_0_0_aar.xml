@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:design:28.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/85806baa1ea79869975f06ae28ccfded/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1de90d3fff1be8a38378087e792e0595/annotations.zip!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/design-28.0.0.aar/9d9331163315bad0cdc13e6ac725c1c9/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/85806baa1ea79869975f06ae28ccfded/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/85806baa1ea79869975f06ae28ccfded/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/85806baa1ea79869975f06ae28ccfded/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1de90d3fff1be8a38378087e792e0595/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1de90d3fff1be8a38378087e792e0595/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/1de90d3fff1be8a38378087e792e0595/AndroidManifest.xml" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/design-28.0.0.aar/9d9331163315bad0cdc13e6ac725c1c9/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/design-28.0.0.aar/9d9331163315bad0cdc13e6ac725c1c9/res" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/design-28.0.0.aar/9d9331163315bad0cdc13e6ac725c1c9/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -16,10 +16,10 @@ import java.util.ArrayList;
 public class adapterproductos extends RecyclerView.Adapter<adapterproductos.ExampleViewHolder> {
     private ArrayList<datosproductos> mExampleList;
     private OnItemClickListener mListener;
-    private final double precioe;
+    private double precio;
 
     public interface OnItemClickListener {
-        void onItemClick(String id_producto, String nombre_producto, String desc, double bruto);
+        void onItemClick(String id_producto, String nombre_producto, String desc, String bruto);
     }
 
     public void setOnItemClickListener(OnItemClickListener listener) {
@@ -74,14 +74,14 @@ public class adapterproductos extends RecyclerView.Adapter<adapterproductos.Exam
     @Override
     public void onBindViewHolder(ExampleViewHolder holder, int position) {
         datosproductos currentItem = mExampleList.get(position);
-        holder.imagen.setImageResource(R.drawable.datamaule);
+        holder.imagen.setImageResource(R.drawable.pastel);
         holder.mTextView0.setText(currentItem.getId_producto());
         holder.mTextView1.setSelected(true);
         holder.mTextView1.setText(currentItem.getNombre_producto());
         precio=currentItem.getBruto();
         int bruto_redondeado= (int) Math.round(currentItem.getBruto());
-        holder.mTextView2.setText(String.valueOf(bruto_redondeado));
-        holder.mTextView3.setText(currentItem.getDesc());
+        holder.mTextView2.setText(("$"+bruto_redondeado));
+        holder.mTextView3.setText(currentItem.getDesc()+"ASDUIGGGGGGGGGGDDDDUAGDUIASGDUASGUDIAGIUDGASGDUIASGUIDGUASIDGUIASIDGUIASGDASGDASUDIIIIIIIII");
     }
 
     @Override

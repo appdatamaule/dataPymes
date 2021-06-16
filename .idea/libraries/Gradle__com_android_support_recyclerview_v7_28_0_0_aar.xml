@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:recyclerview-v7:28.0.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2f4e388619c72e88dc26683f5745d7b1/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d558fe77f593e58e9d890a3f6d47bb25/annotations.zip!/" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/a0576f42913e6be1be77e9bc831bcb9b/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2f4e388619c72e88dc26683f5745d7b1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2f4e388619c72e88dc26683f5745d7b1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/2f4e388619c72e88dc26683f5745d7b1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d558fe77f593e58e9d890a3f6d47bb25/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d558fe77f593e58e9d890a3f6d47bb25/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/d558fe77f593e58e9d890a3f6d47bb25/res" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/a0576f42913e6be1be77e9bc831bcb9b/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/a0576f42913e6be1be77e9bc831bcb9b/AndroidManifest.xml" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/a0576f42913e6be1be77e9bc831bcb9b/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

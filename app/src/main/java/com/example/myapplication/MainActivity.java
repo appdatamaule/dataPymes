@@ -69,8 +69,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         } else if (id == R.id.nav_notas_exenta) {
             fragmentManager.beginTransaction().replace(R.id.contenedor,new productos_fragment()).commit();
         }else if (id == R.id.SALIR) {
-            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-            startActivity(intent);
+            fragmentManager.beginTransaction().replace(R.id.contenedor,new productos_fragment()).commit();
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

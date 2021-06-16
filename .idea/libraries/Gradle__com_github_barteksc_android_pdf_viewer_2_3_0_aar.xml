@@ -1,0 +1,19 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.barteksc:android-pdf-viewer:2.3.0@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/96bd433586181dfed87ba1548ef2b3de/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/96bd433586181dfed87ba1548ef2b3de/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/96bd433586181dfed87ba1548ef2b3de/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/a3b8382aa0fa84811ff95add1330f175/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/a3b8382aa0fa84811ff95add1330f175/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/a3b8382aa0fa84811ff95add1330f175/AndroidManifest.xml" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/4301bc7e135a437d062bc3cf6f9a5b82/AndroidManifest.xml" />
+      <root url="jar://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/4301bc7e135a437d062bc3cf6f9a5b82/jars/classes.jar!/" />
+      <root url="file://$APPLICATION_HOME_DIR$/gradle/gradle-7.1/caches/transforms-1/files-1.1/android-pdf-viewer-2.3.0.aar/4301bc7e135a437d062bc3cf6f9a5b82/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.barteksc/android-pdf-viewer/2.3.0/d1bff357b82afe77fd8b370f104bb65c87eed95d/android-pdf-viewer-2.3.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
