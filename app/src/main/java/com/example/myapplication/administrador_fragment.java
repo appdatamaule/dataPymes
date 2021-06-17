@@ -12,6 +12,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.myapplication.clases.adapterproductos;
@@ -32,15 +33,26 @@ public class administrador_fragment extends Fragment {
     adapterproductos adapterproductos;
     RecyclerView recyclerView;
 
+    //DATOS DE EMPRESA
+    TextView nombreEmpresa;
+    TextView rutEmpresa;
+    TextView Categorias;
+    TextView Sucursales;
+
+    //DATOS USUARIO
+    TextView Usuario;
+    TextView nombreCompleto;
+    TextView localAsignado;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view=inflater.inflate(R.layout.fragment_menu_admin, container, false);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("");
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Menú Principal");
 
         datosproductos=new ArrayList<>();
         recyclerView=view.findViewById(R.id.recyclerView);
-        new llenarbodega(getContext(),"192.168.1.87","5432","postgres","159753","app_inventario").execute();
+        new llenarbodega(getContext(),"localhost","5432","postgres","159753","dataPymes").execute();
         return view;
     }
     public class llenarbodega extends AsyncTask<String, Void, String> {
@@ -66,15 +78,16 @@ public class administrador_fragment extends Fragment {
             try {
                 Class.forName("org.postgresql.Driver");
                 conexion = DriverManager.getConnection("jdbc:postgresql://" + db_servidor + ":" + db_puerto + "/" + db_batabase, db_usuario, db_contrasena);
-                String sql = "select p.id_producto,p.nombre_producto,p.cbarra, dlp.total from producto p inner join detalle_lprecio dlp on p.id_producto=dlp.id_producto LIMIT 50";
+                String sql1 = "select nombre_empresa, rut_empresa from empresa";
                 Statement st = conexion.createStatement();
-                ResultSet rs = st.executeQuery(sql);
+                ResultSet rs = st.executeQuery(sql1);
                 while (rs.next()) {
-                    String id_producto = rs.getString(1);
-                    String nombre_producto = rs.getString(2);
-                    String desc = rs.getString(3);
-                    double bruto = rs.getDouble(4);
-                    datosproductos.add(new datosproductos(id_producto, nombre_producto, desc, bruto));
+                    String nombre_empresa = rs.getString(1);
+                    String rut_empresa = rs.getString(2);
+                    nombreEmpresa.setText(nombre_empresa);
+                    rutEmpresa.setText(rut_empresa);
+
+
                 }
                 conexion.close();
 
@@ -89,21 +102,8 @@ public class administrador_fragment extends Fragment {
 
         protected void onPostExecute(String success) {
             if (success.equals("Exito")) {
-                buildRecyclerView();
                 pd2.dismiss();
             }
         }
-    }
-    public void buildRecyclerView() {
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapterproductos = new adapterproductos(datosproductos);
-        recyclerView.setAdapter(adapterproductos);
-        adapterproductos.setOnItemClickListener(new adapterproductos.OnItemClickListener(){
-            @Override
-            public void onItemClick(String id_producto, String nombre_producto, String desc, String bruto) {
-                Toast toast = Toast.makeText(getContext(), "aaaaaa", Toast.LENGTH_SHORT);
-                toast.show();
-            }
-        });
     }
 }

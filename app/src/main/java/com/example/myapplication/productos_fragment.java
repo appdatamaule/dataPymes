@@ -38,12 +38,13 @@ public class productos_fragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.fragment_productos, container, false);
+        View view=inflater.inflate(R.layout.fragment_menu_admin, container, false);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("");
 
+        datosproductos = new ArrayList<>();
         datosproductos=new ArrayList<>();
         recyclerView=view.findViewById(R.id.recyclerView);
-        new llenarbodega(getContext(),"192.168.1.87","5432","postgres","159753","app_inventario").execute();
+        new llenarbodega(getContext(),"localhost","5432","postgres","159753","dataPymes").execute();
         return view;
     }
     public class llenarbodega extends AsyncTask<String, Void, String> {
