@@ -86,8 +86,6 @@ public class administrador_fragment extends Fragment {
                     String rut_empresa = rs.getString(2);
                     nombreEmpresa.setText(nombre_empresa);
                     rutEmpresa.setText(rut_empresa);
-
-
                 }
                 conexion.close();
 
