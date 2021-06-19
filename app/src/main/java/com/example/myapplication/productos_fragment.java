@@ -41,13 +41,13 @@ public class productos_fragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_menu_admin, container, false);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("");
 
-        datosproductos = new ArrayList<>();
+        /*datosproductos = new ArrayList<>();
         datosproductos=new ArrayList<>();
         recyclerView=view.findViewById(R.id.recyclerView);
-        new llenarbodega(getContext(),"localhost","5432","postgres","159753","dataPymes").execute();
+        new llenarbodega(getContext(),"localhost","5432","postgres","159753","dataPymes").execute();*/
         return view;
     }
-    public class llenarbodega extends AsyncTask<String, Void, String> {
+    /*public class llenarbodega extends AsyncTask<String, Void, String> {
         private final String db_servidor, db_puerto, db_usuario, db_contrasena, db_batabase;
         private final Context context;
 
@@ -109,5 +109,5 @@ public class productos_fragment extends Fragment {
                 toast.show();
             }
         });
-    }
+    }*/
 }

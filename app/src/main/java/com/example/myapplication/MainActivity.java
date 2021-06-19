@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         text = (TextView)ventanaheader.findViewById(R.id.setname);
         text2=(TextView)ventanaheader.findViewById(R.id.nombrerol);
         FragmentManager fragmentManager= getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.contenedor,new productos_fragment()).commit();
+        fragmentManager.beginTransaction().replace(R.id.contenedor,new administrador_fragment()).commit();
 
     }
     @Override

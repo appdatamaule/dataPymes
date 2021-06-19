@@ -37,10 +37,10 @@ public class administrador_fragment extends Fragment {
     TextView nombreEmpresa;
     TextView rutEmpresa;
     TextView Categorias;
-    TextView Sucursales;
 
     //DATOS USUARIO
     TextView Usuario;
+    TextView nombreUsuario;
     TextView nombreCompleto;
     TextView localAsignado;
 
@@ -50,9 +50,16 @@ public class administrador_fragment extends Fragment {
         View view=inflater.inflate(R.layout.fragment_menu_admin, container, false);
         ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle("Menú Principal");
 
-        datosproductos=new ArrayList<>();
-        recyclerView=view.findViewById(R.id.recyclerView);
-        new llenarbodega(getContext(),"localhost","5432","postgres","159753","dataPymes").execute();
+        nombreEmpresa = (TextView) view.findViewById(R.id.nombre_empresa);
+        rutEmpresa = (TextView) view.findViewById(R.id.rut_empresa);
+        Categorias = (TextView) view.findViewById(R.id.categoria_empresa);
+        Usuario = (TextView) view.findViewById(R.id.usuario);
+        nombreUsuario = (TextView) view.findViewById(R.id.nombre_usuario);
+        nombreCompleto = (TextView) view.findViewById(R.id.nombre_completo);
+        localAsignado = (TextView) view.findViewById(R.id.nombre_local);
+
+
+        new llenarbodega(getContext(),"192.168.1.174","5432","postgres","159753","dataPymes").execute();
         return view;
     }
     public class llenarbodega extends AsyncTask<String, Void, String> {
@@ -78,14 +85,23 @@ public class administrador_fragment extends Fragment {
             try {
                 Class.forName("org.postgresql.Driver");
                 conexion = DriverManager.getConnection("jdbc:postgresql://" + db_servidor + ":" + db_puerto + "/" + db_batabase, db_usuario, db_contrasena);
-                String sql1 = "select nombre_empresa, rut_empresa from empresa";
+                String sql = "select e.nombre_empresa, e.rut_empresa, u.nombre_usuario, c.nombre_categoria, u.nombre_completo_usuario, l.nombre_local from empresa as e join usuario as u on u.id_usuario = e.id_empresa left join categoria as c on c.id_categoria = e.id_empresa left join local as l on l.id_local = u.id_usuario where u.id_usuario = 1";
                 Statement st = conexion.createStatement();
-                ResultSet rs = st.executeQuery(sql1);
+                ResultSet rs = st.executeQuery(sql);
                 while (rs.next()) {
                     String nombre_empresa = rs.getString(1);
                     String rut_empresa = rs.getString(2);
+                    String nombre_usuario = rs.getString(3);
+                    String nombre_categoria = rs.getString(4);
+                    String nombre_completo_usuario = rs.getString(5);
+                    String nombre_local = rs.getString(6);
                     nombreEmpresa.setText(nombre_empresa);
                     rutEmpresa.setText(rut_empresa);
+                    Usuario.setText(nombre_usuario);
+                    nombreUsuario.setText(nombre_usuario);
+                    Categorias.setText(nombre_categoria);
+                    nombreCompleto.setText(nombre_completo_usuario);
+                    localAsignado.setText(nombre_local);
                 }
                 conexion.close();
 
