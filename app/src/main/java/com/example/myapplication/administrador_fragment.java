@@ -55,7 +55,7 @@ public class administrador_fragment extends Fragment {
         Categorias = (TextView) view.findViewById(R.id.categoria_empresa);
         Usuario = (TextView) view.findViewById(R.id.usuario);
         nombreUsuario = (TextView) view.findViewById(R.id.nombre_usuario);
-        nombreCompleto = (TextView) view.findViewById(R.id.nombre_completo);
+        nombreCompleto = (TextView) view.findViewById(R.id.nombre_completo_usuario);
         localAsignado = (TextView) view.findViewById(R.id.nombre_local);
 
 
